@@ -1,0 +1,261 @@
+body {
+    background-color: #EBEBEC;
+}
+
+#home {
+    background: #EBEBEC;
+}
+
+.bg-vs-dark {
+    background: #252636;
+}
+.bg-vs-white {
+    background-color: #ffffff;
+}
+
+.header-text {
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 18px;
+    color: #DCD6D6;
+    letter-spacing: 2px;
+}
+/*#### ICONS*/
+.fa-phone-alt {
+    color: red;
+
+}
+.fa-envelope {
+    color: red;
+
+}
+/*#### ICONS*/
+/*####*/
+
+#header-question {
+    margin-left: auto;
+    width: auto;
+    /*color: darkslategrey;*/
+}
+#header-contacts p{
+    font-family: "Montserrat Light",sans-serif !important;
+
+}
+#header-contacts {
+    border-radius:  0 0 4px 4px;
+    background: #EBEBEC;
+}
+
+.fa-angle-double-right {
+    color: red;
+
+}
+
+a {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font-family: "Lato",sans-serif;
+    font-size: 16px;
+    color: #EBEBEC !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: 0.5s
+}
+
+a.current::after {
+     position: absolute;
+     content: "";
+     top: 100%;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background: #F5C405;
+     transform: scaleX(0);
+     transform-origin: right;
+     transition: transform 0.5s;
+ }
+
+a.current:hover {
+     color: #95a5a6;
+ }
+
+a.current:hover::after {
+     transform: scaleX(1);
+     transform-origin: left;
+ }
+
+.navi{
+    background: #252636 !important;
+    border-bottom: #F5C405 solid 3px !important;
+    border-radius: 0;
+    text-decoration: none;
+    color: #95a5a6;
+
+}
+
+
+/*######*/
+
+#home-first {
+    padding-top: 20vh;
+    height: 70vh;
+    background-image: url("../img/mainBanner.png");
+    /*background-size: cover;*/
+}
+
+.home-banner-text strong{
+    font-family: "Montserrat ExtraBold",sans-serif;
+    font-size: 45px;
+    color: #F5C405;
+}
+
+.home-banner-text em {
+    text-decoration: underline solid #F5C405;;
+}
+
+.fa-check {
+    color: #F5C405;
+}
+
+.home-banner {
+    /*width: ;*/
+}
+
+.home-banner-button {
+    background-color: #F5C405 !important;
+    font-family: "Montserrat SemiBold",sans-serif;
+
+}
+.home-banner-button:hover {
+    background-color: #cf6b01 !important;
+    color: white !important;
+
+}
+
+
+
+.home-banner-text{
+    font-family: "Montserrat Black",sans-serif;
+    font-size: 45px;
+}
+
+.home-banner li {
+    font-family: "Montserrat Medium",sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.logo {
+    /*height;*/
+    position: relative;
+    height: 8vh;
+    width: auto;
+    background: #252636;
+    margin-right: 10vw;
+}
+
+.test {
+    background: red;
+}
+
+.menu-item-left {
+    margin-right: 2vw;
+    margin-top: 0.5vw;
+    height: 40px;
+}
+.menu-item-logo {
+    /*margin-right: 200px;*/
+    /*margin-top: 25px;*/
+}
+
+.menu-item-last {
+    margin-top: 0.5vw;
+    height: 40px;
+}
+
+
+
+.index {
+    z-index: -1;
+}
+
+/*###*/
+.main-banner {
+    height: 660px;
+    width: 100vw;
+}
+
+.second-banner {
+}
+
+.main-cont-3 {
+    background-color: #252636;
+}
+
+.main-cont-4 {
+    height: 770px;
+    background-color: #EBEBEC;
+}
+
+.rounded-32 {
+    border-radius: 32px;
+}
+
+.feedback-card {
+    background: #EBEBEC;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+h2 .main-cont-4 {
+    font-family: "Montserrat Regular", serif;
+    font-size: 24px;
+    color: #252636;
+}
+
+
+p {
+    font-family: "Montserrat ExtraLight", sans-serif;
+
+}
+
+h2 {
+
+    font-family: "Montserrat SemiBold", sans-serif;
+
+    font-size: 48px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+#contacts {
+    height: 80vh;
+}
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 1200px)
+{
+    #navbarNav { display: none;
+    }
+    #home-first {
+            height: 100vh;
+
+
+    }
+    #mobile-number {
+        display: none;
+    }
+
+    .main-cont-4 {
+        height: auto;
+    }
+
+    #mobile-cards {
+        margin-top: 20px;
+    }
+
+}
