@@ -1,41 +1,15 @@
-<body class="">
-<div class="container-fluid bg-vs-dark row-cols-2" >
-<div class=" text-dark col ms-auto" id="header-contacts">
-        <div class="row">
-            <div class="col row ms-2">
-                <i class="fas fa-phone-alt col-1 my-auto"></i>
-                <p class="col-2 my-auto ms-0">22482946</p>
-            </div>
-            <div class="col col-sm row" id="mobile-number">
-                <i class="fas fa-phone-alt col-1 my-auto"></i>
-                <p class="col-2 my-auto ms-0">22482946</p>
+<div class="" id="header">
 
-            </div>
-            <div class="col col-sm row" id="mobile-number">
-                <i class="far fa-envelope col-1 my-auto"></i>
-                <p class="col my-auto ms-0">info@vs-buvgrupa.lv</p>
-
-            </div>
-            <div class="col row" id="header-question">
-                <i class="fas fa-angle-double-right col-1 my-auto"></i>
-                <a class="col my-auto ms-0 text-dark" href="">Задать вопрос</a>
-            </div>
-        </div>
-
-        </div>
-
-</div>
-
-<nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-vs-dark" id="navbar">
+<nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-vs-dark mt-5" id="navbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="container collapse navbar-collapse nav nav-pills ">
-        <img src="{{ asset('assets/img/loge-new.png') }}" alt="Logo" class="logo">
-        <ul class="container navbar-nav header-text justify-content-around row-cols-auto"  id="navbarNav">
 
+        <img src="{{ asset('assets/img/loge-new.png') }}" alt="Logo" class="logo" id="logo">
+        <ul class="container navbar-nav header-text justify-content-around row-cols-auto"  id="navbarNav">
             <li class="nav-item menu-item-left my-auto col">
-                <a class=" {{ Route::is('/') ? 'navi' : '' }} current" href="{{ route('home') }}">Главная</a>
+                <a class="{{ Route::is('/') ? 'navi' : '' }} current" href="{{ route('home') }}">Главная</a>
             </li>
             <li class="nav-item menu-item-left my-auto col">
                 <a class="{{ Route::is('works') ? 'navi' : '' }} current" href="{{ route('works') }}">Работы</a>
@@ -47,7 +21,7 @@
                 <a class="{{ Route::is('montage') ? 'navi' : '' }} current" href="{{ route('montage') }}">Монтаж</a>
             </li>
             <li class="nav-item menu-item-left my-auto col">
-                <a class="{{ Route::is('about-us') ? 'navi' : '' }} current" href="{{ route('about-us') }}">О НАС</a>
+                <a class="{{ Route::is('about-us') ? 'navi' : '' }} current" href="{{ route('about-us') }}">Онас</a>
             </li>
             <li class="nav-item menu-item-last my-auto col">
                 <a class="{{ Route::is('contacts') ? 'navi' : '' }} current" href="{{ route('contacts') }}">Контакты</a>
@@ -55,4 +29,19 @@
         </ul>
     </div>
 </nav>
-</body>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.height = "4vh";
+            } else {
+                document.getElementById("navbar").style.padding = "40px 10px";
+                document.getElementById("logo").style.height = "6vh";
+            }
+        }
+    </script>
+</div>
+
